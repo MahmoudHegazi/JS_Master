@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+
+
+
+<script>
+
+let t0 = performance.now();
+
+const fragment = document.createDocumentFragment(); 
+const mydiv = document.createElement("div");
+
+for (let i= 0; i <= 3; i++) {
+  const mypp = document.createElement("p");
+  mypp.innerText = "I'm P " + i;
+  mypp.className = "comment";
+  fragment.appendChild(mypp);
+  
+}
+
+
+mydiv.appendChild(fragment);
+document.body.appendChild(mydiv);
+
+
+
+const mybutton = document.createElement("button");
+mybutton.innerText = "Hide/Show";
+mybutton.id = "show_hide";
+document.body.appendChild(mybutton);
+
+
+
+
+const mycomments = document.querySelectorAll(".comment");
+
+const toggle = document.getElementById("show_hide");
+var hideShow = 0;
+toggle.addEventListener("click", mytoggle);
+function mytoggle() {
+
+if (hideShow == 1) {
+  
+  for (let i=0; i<mycomments.length; i++) {
+     mycomments[i].style.display = "block";
+  }
+  alert(hideShow);
+  hideShow = 0;
+
+} else {
+
+    for (let i=0; i<mycomments.length; i++) {
+     mycomments[i].style.display = "none";
+  }
+ 
+  alert(hideShow);
+  hideShow = 1;
+}
+}
+
+let t1 = performance.now();
+alert(`the page takes ${t1 - t0} milliseconds `);
+</script>
+</body>
+</html>
