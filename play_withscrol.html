@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+body {
+  height: 1000px;
+}
+</style>
+</head>
+<body>
+
+<div id="mainContent" style="overflow:auto;border:2px solid black;height:400px;">
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p><h1>This is a Heading</h1>
+<p>This is a paragraph.</p><h1>This is a Heading</h1>
+<p>This is a paragraph.</p><h1>This is a Heading</h1>
+<p>This is a paragraph.</p><h1>This is a Heading</h1>
+<p>This is a paragraph.</p><h1>This is a Heading</h1>
+<p>This is a paragraph.</p><h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+</div>
+
+<script>
+document.getElementById('mainContent').addEventListener('scroll', function (event) {
+// console.log(window.pageYOffset);
+console.log(event.target);
+console.log("hi");
+.getElementById(“mainContent”)
+.addEventListener(“scroll”, function (event)
+
+if (event.target.nodeName == "DIV") {
+  console.log(event.currentTarget);
+}
+});
+</script>
+</body>
+</html>
