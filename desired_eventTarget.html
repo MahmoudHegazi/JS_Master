@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<style>
+.pemo {
+  border: 2px solid gold;
+  width: 5px;
+  height: 5px;
+}
+
+
+</style>
+<body>
+
+<div id="content">
+<p>ph <span>number</span> 54This is paragraph <span>number</span> 55This is paragraph <span>number</span> 56This is par</p>
+</div>
+
+
+<script>
+document.querySelector('#content').addEventListener('click', function (evt) {
+    if (evt.target.nodeName === 'SPAN') {  // ← verifies target is desired element
+        console.log(`A ${evt.target.nodeName} was clicked `);
+    }
+});
+
+
+</script>
+
+</body>
+</html>
