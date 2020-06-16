@@ -82,3 +82,10 @@ However, an alternative solution would be to use browser events! 🙌🏼
 
 ```
 
+```javascript
+document.addEventListener('DOMContentLoaded', function () {
+    console.log('the DOM is ready to be interacted with!');
+});
+
+```
+
