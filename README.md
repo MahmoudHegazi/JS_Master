@@ -58,3 +58,18 @@ window.addEventListener('DOMContentLoaded', (event) => {
 })
 ```
 
+# why and when we use DOMContentLoaded event
+
+```text
+document.querySelector('footer').style.backgroundColor = 'purple';
+Does anything jump out at you about this code? Anything at all? This code is completely error-free...unfortunately, when it runs, it will still cause an error. Any ideas why?
+
+The problem is with the .querySelector() method. When it runs...there's no <footer> element to select from the constructed document object model yet! So instead of returning a DOM element, it will return null. This causes an error because it would be like running the following code:
+
+Now, we've already used one solution to this issue. Remember that we moved the JavaScript file down to the bottom of the page. Think about why this would make things work. Well, if the DOM is built sequentially, _if_ the JavaScript code is moved to the very bottom of the page, then by the time the JavaScript code is run, all DOM elements will already exist!
+
+However, an alternative solution would be to use browser events! 🙌🏼
+
+
+```
+
