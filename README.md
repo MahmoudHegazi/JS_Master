@@ -1,4 +1,27 @@
 # JS_Master
+
+#use it (1):
+
+```javascript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          document.querySelector('footer').style.backgroundColor = 'purple';
+      });
+    </script>
+	
+```	
+
+
+
+
+
+
+
+
 This is for training, I used what I learned recently and added them all in one JS file that takes just 0.5400000372901559 ms to display the page and do a lot of JS codes (create 4 paragraphs, then append it to DocumentFragment () then create a div and append DocumentFragment to it, I also created (first post Switch (toggle) built in the world with 0 and 1 I created from the beginning I can copy logic very easily but I did not do it which is better the browser would say omg it's so easy can you make it harder please!, faster and easy to understood by the browser) Hide / show p , I used performance.now() in order to test the render time
 
 
