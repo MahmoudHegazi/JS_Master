@@ -1,6 +1,12 @@
 # JS Recap
 
-#use it (1) when:
+To insert the HTML into the document rather than replace the contents of an element,
+use the method insertAdjacentHTML().
+insertAdjacentHTML()
+
+
+
+
 So when would you want to use this technique? Well, 
 JavaScript code in the <head> will run before JavaScript code in the <body>,
 	so if you do have JavaScript code that needs to run as soon as possible,
