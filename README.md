@@ -21,9 +21,6 @@ document.getElementById("parent-list").addEventListener("click", function(e) {
 });
 ```
 
-
-
-
 --------------------------------------------------------------------------------------
 
 ```javascript
@@ -36,3 +33,10 @@ document.getElementById("myDiv").addEventListener("click",function(e) {
 	}
 });
 ```
+
+----------------------------------------------------------------------------------------
+Using the Element.matches API, we can see if the element matches our desired target.
+
+Since most developers use a JavaScript library for their DOM element and event handling, I recommend using the library's method of event delegation, as they are capable of advanced delegation and element identification.
+
+Hopefully this helps you visually the concept behind event delegation and convinces you of delegation's power!
