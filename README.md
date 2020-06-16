@@ -40,3 +40,21 @@ Using the Element.matches API, we can see if the element matches our desired tar
 Since most developers use a JavaScript library for their DOM element and event handling, I recommend using the library's method of event delegation, as they are capable of advanced delegation and element identification.
 
 Hopefully this helps you visually the concept behind event delegation and convinces you of delegation's power!
+
+
+
+
+
+--------------------------------------------------------------------------------------------
+
+The original target for this event is the Document that has loaded. You can listen for this event on the Window interface to handle it in the capture or bubbling phases. For full details on this event please see the page on the Document: DOMContentLoaded event.
+
+A different event, load, should be used only to detect a fully-loaded page. It is a common mistake to use load where DOMContentLoaded would be more appropriate.
+
+```javascript
+Basic usage
+window.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
+})
+```
+
