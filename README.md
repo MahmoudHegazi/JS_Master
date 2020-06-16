@@ -1,6 +1,16 @@
 # JS Recap
 
 ### insertAdjacentHTML
+
+```html
+<!-- beforebegin -->
+<p>
+  <!-- afterbegin -->
+  foo
+  <!-- beforeend -->
+</p>
+<!-- afterend -->
+```
 To insert the HTML into the document rather than replace the contents of an element,
 use the method insertAdjacentHTML().
 insertAdjacentHTML()
