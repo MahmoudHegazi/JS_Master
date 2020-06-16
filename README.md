@@ -1,5 +1,15 @@
 # JS Recap
 
+### first step in project
+Instead of writing out the script tag directly, create it as an object and then append it. The browser should respect it when you've created the element directly instead of passing it a string.
+
+var script = document.createElement( "script" );
+script.type = "text/javascript";
+script.src = "scriptname.js";
+$("#temp").append(script);
+Then you can just put the javascript you want to execute in the external script file and it should work fine
+
+
 ### insertAdjacentHTML
 
 ```html
