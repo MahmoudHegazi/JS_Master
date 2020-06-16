@@ -1,5 +1,8 @@
 # JS Recap
 
+# landing page
+Are you listening for an event for the navigation to build?
+Yes, DOMContentLoaded event (when all html content or markup loaded no, images, no styles but text included)
 # data 
 
 ```html 
