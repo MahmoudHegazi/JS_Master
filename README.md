@@ -1,6 +1,6 @@
 # JS Recap
 
-### create and append script to document + Attack
+### create and append script to document  or change it 
 Instead of writing out the script tag directly, create it as an object and then append it. The browser should respect it when you've created the element directly instead of passing it a string.
 
 var script = document.createElement( "script" );
