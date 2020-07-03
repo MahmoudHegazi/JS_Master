@@ -1,5 +1,19 @@
 # JS Recap
 
+Rest:
+
+```javascript
+const order = [20.17, 18.67, 1.50, "cheese", "eggs", "milk", "bread"];
+const [total, subtotal, tax, ...items] = order;
+console.log(total, subtotal, tax, items);
+
+function myfunction(...items) {
+  for (const item of items) {
+    console.log(item);
+  }
+}
+```
+
 # landing page
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#Examples
