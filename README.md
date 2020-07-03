@@ -13,6 +13,22 @@ function myfunction(...items) {
   }
 }
 ```
+# quiz (1-5):
+``` javascript
+function average(...numbers) {
+    let total = 0;
+    for (const number of numbers) {
+        total += number;
+    }
+    if (numbers.length === 0) {
+        total = 0;
+        return total;
+    } else {
+    return total/numbers.length;
+    }
+
+}
+```
 
 # Sum function with rest:
 
