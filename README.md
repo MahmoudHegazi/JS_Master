@@ -14,6 +14,21 @@ function myfunction(...items) {
 }
 ```
 
+# Sum function with rest:
+
+```javascript
+function sum(...numbers) {
+   var sum = 0;
+   for (const number of numbers) {
+     sum += number;
+   }
+   alert(sum);
+}
+
+sum(1, 2, 3);
+
+
+```
 # landing page
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#Examples
