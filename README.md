@@ -1,5 +1,39 @@
 # JS Recap
 
+
+scrollintoview  scrollTo scrollBy
+```html
+
+<button onclick="myFunction()">Scroll</button>
+
+<div id="myDIV">
+  <div id="content">
+  Some text inside an element.
+  </div>
+  <div id="content">
+  Some text inside an element.
+  </div>
+
+</div>
+
+<script>
+function myFunction() {
+  var elmnt = document.getElementById("content");
+  elmnt.scrollIntoView();
+}
+	
+function scrollWin() {
+  window.scrollTo(100, 0);
+}
+function scrollWin() {
+  window.scrollBy(100, 0);
+}	
+	
+	
+</script>
+
+
+```
 Rest:
 
 ```javascript
